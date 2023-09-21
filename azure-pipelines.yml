@@ -12,7 +12,7 @@ pool:
 steps:
 - task: AzureContainerApps@1
   inputs:
-    appSourcePath: '$(Build.SourcesDirectory)/src'
+    appSourcePath: './'
     azureSubscription: 'bfcd912d-65c4-45a4-a295-98cd0575777e'
     acrName: 'yannis'
     containerAppName: 'web-app'
