@@ -1,0 +1,14 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureContainerApps@1
+  inputs:
+    appSourcePath: './'
+    azureSubscription: 'bfcd912d-65c4-45a4-a295-98cd0575777e'
+    acrName: 'apinston'
+    containerAppName: 'web-app'
+    resourceGroup: 'apinston'
